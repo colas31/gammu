@@ -1,0 +1,47 @@
+# File : /etc/gammu-smsdrc
+# Configuration file for Gammu SMS Daemon
+
+# Gammu library configuration, see gammurc(5)
+[gammu]
+device = /dev/ttyUSB1
+connection = at
+name = Phone on USB serial port ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ HUAWEI_Mobile
+synchronizetime = yes
+gammucoding = utf8
+
+[gammu1]
+device = /dev/ttyUSB2
+connection = at
+name = Phone on USB serial port ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ HUAWEI_Mobile
+synchronizetime = yes
+gammucoding = utf8
+
+[gammu2]
+device = /dev/ttyUSB3
+connection = at
+name = Phone on USB serial port ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ HUAWEI_Mobile
+synchronizetime = yes
+gammucoding = utf8
+
+# Debugging
+#logformat = textall
+
+# SMSD configuration, see gammu-smsdrc(5)
+[smsd]
+service = files
+LogFile = /var/log/gammu.log
+# Increase for debugging information
+DebugLevel = 0
+# Change PIN code
+PIN = xxxxxxxx
+# Change SMSC
+SMSC = xxxxxxxxxx
+CommTimeout = 5
+#CheckSecurity = 0
+#RunOnReceive = /path_to_script.sh
+
+# Paths where messages are stored
+inboxpath = /var/spool/gammu/inbox/
+outboxpath = /var/spool/gammu/outbox/
+sentsmspath = /var/spool/gammu/sent/
+errorsmspath = /var/spool/gammu/error/

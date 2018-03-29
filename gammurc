@@ -1,0 +1,22 @@
+# File : /etc/gammurc
+
+[gammu]
+device = /dev/ttyUSB0
+connection = at19200
+name = Phone on USB serial port ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ HUAWEI_Mobile
+synchronizetime = yes
+gammucoding = utf8
+
+[gammu1]
+device = /dev/ttyUSB1
+connection = at19200
+name = Phone on USB serial port ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ HUAWEI_Mobile
+synchronizetime = yes
+gammucoding = utf8
+
+[gammu2]
+device = /dev/ttyUSB2
+connection = at19200
+name = Phone on USB serial port ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ HUAWEI_Mobile
+synchronizetime = yes
+gammucoding = utf8
